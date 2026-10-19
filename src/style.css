@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f7fb;
+    font-family:'Poppins',sans-serif;
+    color:#333;
+    padding-bottom: 80px;
+}
+/* Garis */
+hr{
+    border:none;
+    height:1px;
+    background:#e3e3e3;
+    margin:20px 0;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:30px 0;
+}
+
+header .judul{
+    font-size:32px;
+    font-weight:700;
+    color:#1e293b;
+    letter-spacing:1px;
+}
+
+header .deskripsi{
+    margin-top:10px;
+    color:#64748b;
+}
+
+/* WRAPPER */
+.wrap{
+    width:95%;
+    max-width:1350px;
+    margin:auto;
+}
+
+/*================ NAVBAR =================*/
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#ffffff;
+
+    padding:18px 35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+.logo i{
+
+    font-size:30px;
+
+}
+
+/* Menu */
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:10px;
+
+}
+
+.nav-menu li{
+
+    list-style:none;
+
+}
+
+.nav-menu li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#475569;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.nav-menu li a:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+/* ================= CONTENT ================= */
+
+.blog{
+    float:left;
+    width:74%;
+}
+
+.conteudo{
+    background:white;
+    margin-top:25px;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.conteudo h1{
+    font-family:'Poppins',sans-serif;
+    font-size:34px;
+    font-weight:600;
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+.conteudo p{
+    line-height:30px;
+    font-size:16px;
+    color:#555;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    float:right;
+    width:24%;
+}
+
+.sidebar .widget{
+    margin-top:25px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.sidebar .widget:hover{
+    transform:translateY(-5px);
+}
+
+.sidebar .widget h2{
+    color:#2563eb;
+    font-size:22px;
+    margin-bottom:18px;
+}
+
+.sidebar .widget p{
+    color:#666;
+    line-height:28px;
+}
+
+/* CLEAR FLOAT */
+.wrap::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.blog,
+.sidebar{
+    width:100%;
+}
+
+.sidebar{
+    margin-top:20px;
+}
+
+nav.menu ul li,
+nav.menu ul li:last-child{
+    float:none;
+}
+
+nav.menu ul a{
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.conteudo h1{
+    font-size:28px;
+}
+
+header .judul{
+    font-size:25px;
+}
+
+}
